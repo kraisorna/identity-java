@@ -1,0 +1,3 @@
+com\kraisorn\identity\MvcConfig.class
+com\kraisorn\identity\WebSecurityConfig.class
+com\kraisorn\identity\IdentityApplication.class
