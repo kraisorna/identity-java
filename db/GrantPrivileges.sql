@@ -1,0 +1,1 @@
+grant all on identity.* to 'springuser'@'%';

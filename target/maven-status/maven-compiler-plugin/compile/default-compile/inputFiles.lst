@@ -1,6 +1,9 @@
-D:\workspace\identity\src\main\java\com\kraisorn\identity\WebSecurityConfig.java
-D:\workspace\identity\src\main\java\com\kraisorn\identity\PersonRepository.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\configuration\MvcConfig.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\controller\AccountController.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\repository\AccountRepository.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\configuration\WebSecurityConfig.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\controller\PersonController.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\repository\PersonRepository.java
 D:\workspace\identity\src\main\java\com\kraisorn\identity\IdentityApplication.java
-D:\workspace\identity\src\main\java\com\kraisorn\identity\MvcConfig.java
-D:\workspace\identity\src\main\java\com\kraisorn\identity\Person.java
-D:\workspace\identity\src\main\java\com\kraisorn\identity\PersonController.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\domain\Account.java
+D:\workspace\identity\src\main\java\com\kraisorn\identity\domain\Person.java

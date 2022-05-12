@@ -1,0 +1,1 @@
+create user 'springuser'@'%' identified by 'ThePassword';

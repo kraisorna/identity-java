@@ -1,0 +1,1 @@
+grant select, insert, delete, update on identity.* to 'springuser'@'%';

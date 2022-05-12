@@ -1,6 +1,8 @@
+com\kraisorn\identity\controller\AccountController.class
+com\kraisorn\identity\domain\Account.class
 com\kraisorn\identity\configuration\MvcConfig.class
+com\kraisorn\identity\repository\AccountRepository.class
 com\kraisorn\identity\controller\PersonController.class
 com\kraisorn\identity\repository\PersonRepository.class
-com\kraisorn\identity\configuration\WebSecurityConfig.class
 com\kraisorn\identity\domain\Person.class
 com\kraisorn\identity\IdentityApplication.class
