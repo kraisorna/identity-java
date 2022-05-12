@@ -19,4 +19,9 @@ public class PersonController {
     public Person person(@RequestParam(value = "name", defaultValue = "Kraisorn") String name) {
         return repository.save(new Person("Kraisorn","Arjharnapisaranont", String.format(template, name)));
     }
+
+    @GetMapping("/")
+    public String index() {
+        return "People from Spring Boot!";
+    }
 }
