@@ -14,6 +14,6 @@ public class PersonController {
 
     @GetMapping("/person")
     public Person person(@RequestParam(value = "name", defaultValue = "Kraisorn") String name) {
-        return new Person(counter.incrementAndGet(), String.format(template, name));
+        return new Person("Kraisorn","Arjharnapisaranont", String.format(template, name));
     }
 }

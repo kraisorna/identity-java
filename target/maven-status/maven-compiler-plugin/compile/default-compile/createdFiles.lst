@@ -1,5 +1,6 @@
 com\kraisorn\identity\Person.class
 com\kraisorn\identity\PersonController.class
 com\kraisorn\identity\MvcConfig.class
+com\kraisorn\identity\PersonRepository.class
 com\kraisorn\identity\WebSecurityConfig.class
 com\kraisorn\identity\IdentityApplication.class
