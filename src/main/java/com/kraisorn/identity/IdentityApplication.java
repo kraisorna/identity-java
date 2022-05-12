@@ -19,14 +19,14 @@ public class IdentityApplication {
 	@Bean
 	public CommandLineRunner demo(PersonRepository repository) {
 		return (args) -> {
-			// save a few customers
+			// save a few people
 			repository.save(new Person("Jack", "Bauer","Hello, Kraisorn!"));
 			repository.save(new Person("Chloe", "O'Brian","Hello, Kraisorn!"));
 			repository.save(new Person("Kim", "Bauer","Hello, Kraisorn!"));
 			repository.save(new Person("David", "Palmer","Hello, Kraisorn!"));
 			repository.save(new Person("Michelle", "Dessler","Hello, Kraisorn!"));
 
-			// fetch all customers
+			// fetch all people
 			log.info("People found with findAll():");
 			log.info("-------------------------------");
 			for (Person person : repository.findAll()) {
@@ -34,7 +34,7 @@ public class IdentityApplication {
 			}
 			log.info("");
 
-			// fetch an individual customer by ID
+			// fetch an individual person by ID
 			Person person = repository.findById(1L);
 			log.info("People found with findById(1L):");
 			log.info("--------------------------------");
