@@ -1,5 +1,6 @@
-package com.kraisorn.identity;
+package com.kraisorn.identity.repository;
 
+import com.kraisorn.identity.domain.Person;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

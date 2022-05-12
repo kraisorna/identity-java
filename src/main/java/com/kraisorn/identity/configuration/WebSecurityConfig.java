@@ -1,4 +1,4 @@
-package com.kraisorn.identity;
+package com.kraisorn.identity.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

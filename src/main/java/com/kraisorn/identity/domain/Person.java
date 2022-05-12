@@ -1,4 +1,4 @@
-package com.kraisorn.identity;
+package com.kraisorn.identity.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

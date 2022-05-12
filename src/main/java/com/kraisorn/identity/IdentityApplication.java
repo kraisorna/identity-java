@@ -1,5 +1,7 @@
 package com.kraisorn.identity;
 
+import com.kraisorn.identity.domain.Person;
+import com.kraisorn.identity.repository.PersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

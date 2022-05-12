@@ -1,2 +1,3 @@
-com\kraisorn\identity\PersonControllerIntegrationTest.class
+com\kraisorn\identity\integration\PersonControllerIntegrationTest.class
 com\kraisorn\identity\IdentityApplicationTests.class
+com\kraisorn\identity\unit\PersonControllerTest.class

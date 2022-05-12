@@ -1,4 +1,4 @@
-package com.kraisorn.identity;
+package com.kraisorn.identity.unit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
