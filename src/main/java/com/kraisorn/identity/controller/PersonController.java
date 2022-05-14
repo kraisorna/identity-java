@@ -1,14 +1,15 @@
 package com.kraisorn.identity.controller;
 
-import com.kraisorn.identity.domain.Account;
 import com.kraisorn.identity.exception.PersonNotFoundException;
 import com.kraisorn.identity.repository.PersonRepository;
 import com.kraisorn.identity.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -20,7 +21,18 @@ public class PersonController {
     @Autowired
     PersonRepository repository;
     private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
+
+    @GetMapping("/people")
+    CollectionModel<EntityModel<Person>> all() {
+
+        List<EntityModel<Person>> people = repository.findAll().stream()
+                .map(person -> EntityModel.of(person,
+                        linkTo(methodOn(PersonController.class).one(person.getId())).withSelfRel(),
+                        linkTo(methodOn(PersonController.class).all()).withRel("employees")))
+                .collect(Collectors.toList());
+
+        return CollectionModel.of(people, linkTo(methodOn(PersonController.class).all()).withSelfRel());
+    }
 
     @GetMapping("/{id}")
     EntityModel<Person> one(@PathVariable Long id) {
