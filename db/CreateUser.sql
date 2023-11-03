@@ -1,1 +1,1 @@
-create user 'springuser'@'%' identified by 'ThePassword';
+create user 'springuser'@'%' identified by 'Passw0rd';
