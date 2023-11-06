@@ -25,6 +25,13 @@ public class PersonController {
     @GetMapping("/people")
     CollectionModel<EntityModel<Person>> all() {
 
+//        CollectionModel<EntityModel<Person>> people = (CollectionModel<EntityModel<Person>>) repository.findAll().stream()
+//                .map(person -> EntityModel.of(person,
+//                        linkTo(methodOn(PersonController.class).one(person.getId())).withSelfRel(),
+//                        linkTo(methodOn(PersonController.class).all()).withRel("employees")));
+//
+//        return people;
+
         List<EntityModel<Person>> people = repository.findAll().stream()
                 .map(person -> EntityModel.of(person,
                         linkTo(methodOn(PersonController.class).one(person.getId())).withSelfRel(),

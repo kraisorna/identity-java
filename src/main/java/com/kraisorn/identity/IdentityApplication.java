@@ -7,10 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+//import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
 
 @SpringBootApplication
 public class IdentityApplication {
@@ -21,20 +19,34 @@ public class IdentityApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(IdentityApplication.class);
 
-	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-		return args -> {
+//	@Bean
+//	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+//		return args -> {
+//
+//			System.out.println("Let's inspect the beans provided by Spring Boot:");
+//
+//			String[] beanNames = ctx.getBeanDefinitionNames();
+//			Arrays.sort(beanNames);
+//			for (String beanName : beanNames) {
+//				System.out.println(beanName);
+//			}
+//
+//		};
+//	}
 
-			System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
-				System.out.println(beanName);
-			}
-
-		};
-	}
+//	@Bean
+//	public CommandLineRunner demoAccount(AccountRepository repository) {
+//		return (args) -> {
+//
+//			// fetch all people
+//			log.info("Account found with findAll():");
+//			log.info("-------------------------------");
+//			for (Account account : repository.findAll()) {
+//				log.info(account.toString());
+//			}
+//			log.info("");
+//		};
+//	}
 
 	@Bean
 	public CommandLineRunner demo(PersonRepository repository) {
