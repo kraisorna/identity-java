@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d2e66e1-1062-42e0-b16b-906737a9032a" name="Changes" comment="still java to version 11 and spring boot still version 2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4d2e66e1-1062-42e0-b16b-906737a9032a" name="Changes" comment="still java to version 11 and spring boot still version 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +28,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="b77f8249-ff16-4f97-a05f-99d471d0f7f4" />
-        <option name="url" value="https://github.com/kraisorna/identity.git" />
+        <option name="url" value="https://github.com/kraisorna/identity-java.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -53,7 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/kraisorn/workspace/java/identity-java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
